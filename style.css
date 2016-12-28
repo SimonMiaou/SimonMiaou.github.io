@@ -31,23 +31,23 @@ h1 {
 
 #wrapper {
   background-color: #666666;
-  border: 5px solid #CCCCCC;
+  border-bottom: 5px solid #CCCCCC;
   display: flex;
-  margin: 25px auto 25px auto;
-  padding: 0;
-  width: 500px;
+  flex-wrap: wrap;
+  margin: 0;
+  padding: 0 10px 0 10px;
 }
 
 img#avatar {
   align-self: flex-start;
   border: 0;
-  padding: 10px;
+  margin: 10px auto 10px auto;
 }
 
 #content {
   align-self: center;
   flex-grow: 1;
-  padding: 10px;
+  margin: 10px;
 }
 
 ul#social {
@@ -56,4 +56,18 @@ ul#social {
   list-style-type: none;
   margin: 0;
   padding: 0;
+}
+
+@media only screen and (min-width: 600px) {
+  #wrapper {
+    border: 5px solid #CCCCCC;
+    flex-wrap: nowrap;
+    margin: 25px auto 25px auto;
+    padding: 0;
+    width: 500px;
+  }
+
+  img#avatar {
+    margin: 10px;
+  }
 }
