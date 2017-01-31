@@ -1,18 +1,13 @@
 <!DOCTYPE html>
 <html>
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Simon Lacroix - SimonMiaou - Miaou.be</title>
-  <link href="style.css" rel="stylesheet">
-</head>
+{% include head.html %}
 <body>
 
 <div id="wrapper">
   <img id="avatar" src="https://www.gravatar.com/avatar/450abd6f3c8e330f83205cb1cb140a02?s=150" />
 
   <div id="content">
-    <h1>Simon Lacroix</h1>
+    <h1>{{ site.title | escape }}</h1>
 
     <ul id="social">
       <li><a href="https://twitter.com/SimonMiaou" target="_blank">Twitter</a></li>

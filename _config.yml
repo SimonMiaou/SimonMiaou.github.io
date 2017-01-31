@@ -1,0 +1,10 @@
+# Build settings
+markdown: kramdown
+sass:
+  style: compressed
+exclude:
+  - Gemfile
+  - Gemfile.lock
+
+# Site settings
+title: Simon Lacroix
